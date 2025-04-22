@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript Events and Interactivity</title>
+</head>
+<body>
+    <h1>JavaScript Events</h1> 
+
+    <div class="interactive-elements">
+        <button id="changeTextButton">Click Here!</button>
+        <div id="colorChange" class="color-box"></div>
+        <div class="gallery">
+            <img src="images/pexels-04iraq-1272398525-31041576.jpg" alt="BMW"> <!-- First image -->
+            <img src="images/pexels-tyler-nix-1259808-2396220.jpg" alt="Coffee"> <!-- Second image -->
+        </div>
+      
+    </div>
+
+    <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span class="error" id="passwordError"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
