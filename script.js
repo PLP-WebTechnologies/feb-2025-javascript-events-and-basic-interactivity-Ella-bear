@@ -67,7 +67,7 @@ document.addEventListener('dblclick', () => {
 let pressTimer;
 document.addEventListener('mousedown', () => {
   pressTimer = setTimeout(() => {
-    alert('Long press detected! 🤫');
+    alert('Long press detected! 💡');
   }, 1000); // 1-second long press
 });
 
