@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>JavaScript Events and Interactivity</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Events</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <h1>JavaScript Events</h1> 
+  <h1>Evenets and basic interactivity</h1>
 
-    <div class="interactive-elements">
-        <button id="changeTextButton">Click Here!</button>
-        <div id="colorChange" class="color-box"></div>
-        <div class="gallery">
-            <img src="images/pexels-04iraq-1272398525-31041576.jpg" alt="BMW"> <!-- First image -->
-            <img src="images/pexels-tyler-nix-1259808-2396220.jpg" alt="Coffee"> <!-- Second image -->
-        </div>
-      
-    </div>
+  <!-- Toggle Background Button -->
+  <button id="toggle-bg-btn">Toggle Background Color</button>
 
-    <form id="myForm">
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-        <span class="error" id="emailError"></span>
+  <!-- Text Slider -->
+  <p id="slider-text">Adjust my size with the slider below!</p>
+  <input type="range" id="text-slider" min="10" max="40" value="16">
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
-        <span class="error" id="passwordError"></span>
+  <!-- Tab section -->
+  <button id="open-tab-btn">Open Tab</button>
+  <div id="tab-overlay"></div>
+  <div id="tab">
+    <p>This is a Tab!</p>
+    <button id="close-tab-btn">Close Tab</button>
+  </div>
 
-        <button type="submit">Submit</button>
-    </form>
+  <!-- Form with Validation -->
+  <form id="user-form">
+    <label for="name">Name (min 3 characters):</label><br>
+    <input type="text" id="name" required><br><br>
 
-    <script src="script.js"></script>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label for="password">Password (min 8 characters, 1 uppercase, 1 number, 1 symbol):</label><br>
+    <input type="password" id="password" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Error Message Area -->
+  <div id="error-messages" style="color: red; margin-top: 20px;"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
